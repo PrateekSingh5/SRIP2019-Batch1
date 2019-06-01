@@ -1,0 +1,259 @@
+body {
+    background-color: lightgray;
+    -webkit-user-select: none; /* turning off text selection  / Webkit */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE 10  */
+    -o-user-select: none;    /* Opera */
+    user-select: none;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.nav {
+   
+  list-style-type: none;
+
+ 
+}
+
+.nav div {
+  display: inline-block;
+  font-size: 20px;
+
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+
+}
+
+#content > h3 {
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 8pt;
+
+}
+
+#canvas-holder {
+    float:left;
+    margin-right:10px;
+    border: 1px solid black;
+    background-color: grey;
+    overflow: auto;
+    width: 400px;
+    height: 400px;
+    
+   
+}
+
+canvas {
+    display: block;
+ 
+
+}
+
+#tools {
+    float:left;
+    background-color:white;
+    border: 1px solid black;
+    margin: 0pt;
+    padding: 8px
+}
+
+#tools h3 {
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+}
+
+#help-content {
+    display: none;
+    position: fixed;
+    left: 1cm;
+    right: 1cm;
+    top: 38px;
+    bottom: 1cm;
+    z-index: 20;
+    max-width: 800px;
+    border: 3px solid #740b0b;
+    color: #740b0b;
+    background-color: #F5F5DC;
+    padding: 8px 15px;
+    overflow: auto;
+    -webkit-user-select: text;
+    -moz-user-select: text; 
+    -ms-user-select: text; 
+    -o-user-select: text;
+    user-select: text;
+}
+
+#help-content p {
+    text-indent: 25px;
+}
+
+#help-icon {
+    position: absolute;
+    top:3px;
+    left:3px;
+    z-index:5
+}
+
+#hide-help-icon {
+    display: none;
+    position: absolute;
+    top:3px;
+    left:3px;
+    z-index:50;
+    display: none
+}
+
+#helpBG {
+    display: none;
+    position: fixed;
+    top: 0pt;
+    left: 0pt;
+    bottom: 0pt;
+    right: 0pt;
+    z-index: 10;
+    background-color: white;
+    opacity: 0.75;
+}
+
+
+  #transforms {
+     width: 500px;
+     height: 200px;
+     overflow: auto;
+     margin: 0;
+     padding: 4px;
+     background-color: white;
+     border: thin solid #740b0b;
+  }
+
+    #box {
+     width: 500px;
+     height: 200px;
+     overflow: auto;
+     margin: 0;
+     padding: 4px;
+     background-color: white;
+     border: thin solid #740b0b;
+    
+
+  }
+  #World {
+     width: 500px;
+     height: 400px;
+     overflow: auto;
+     margin: 0;
+     padding: 4px;
+     background-color: white;
+     border: thin solid #740b0b;
+     
+
+  }
+  #Display {
+     width: 500px;
+     height: 400px;
+     overflow: auto;
+     margin: 0;
+     padding: 4px;
+     background-color: white;
+     border: thin solid #740b0b;
+     
+
+  }
+
+  #transforms p {
+      margin: 0px;
+      padding: 1px;
+      border: thin solid;
+  }
+  #tools p {
+      margin: 2px;
+      padding: 0px;
+      text-indent: 0px;
+  }
+  #transforms p.selected {
+      background-color: #DDDDFF;
+  }
+  .input {
+      margin-top:5px;
+      margin-right:4px;
+      padding: 2px;
+      background-color: white;
+      border: thin solid black;
+      font-size:80%;
+      float: left;
+  }
+
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer; 
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg); 
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
